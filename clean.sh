@@ -1,4 +1,10 @@
 :
+if [ $# -lt 1 ]
+then
+echo "Too few parameters..."
+exit
+fi
+
 file=$1
 obj_output=""
 for file in $@
