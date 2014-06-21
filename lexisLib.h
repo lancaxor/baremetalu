@@ -9,7 +9,7 @@
 double pow(double, double);
 
 // int index = findchar(char* string, int stringLen, char Template)
-// returns index of char or -1 if char Template not founded in string
+// returns index of char or -1 if char Template not found in string
 int findchar(char*,int,char);
 
 // int result = strton(char* string, int size)
@@ -26,3 +26,7 @@ void itostr(long int,char*);
 // return length of string str
 // in num of symbols
 int strLen(const char*);
+
+// returns 0 if strings is equals
+// other value -- if not equals
+int strcmp(const char*, const char*);

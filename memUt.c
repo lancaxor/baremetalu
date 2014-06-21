@@ -1,5 +1,5 @@
 #include "memUt.h"
-#include "quickmem.h"
+//#include "quickmem.h"
 
 char packet[2048];
 int running=1;
