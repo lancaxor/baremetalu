@@ -4,9 +4,9 @@
 /*
 * return true if flagName is setted. Flag starts with '-' char
 */
-bool flagSet(char*args[], char*flagName);
+int flagSet(char*args[], int, char*flagName);
 
 /*
 * return value of flagName. Value of flag is next argument after flagName.
 */
-char* flagValue(char*args[], char*flagName);
+char* flagValue(char*args[], int, char*flagName);

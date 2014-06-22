@@ -49,6 +49,8 @@ void b_system_misc(unsigned long function, void* var1, void* var2);
 #define config_argv 2
 #define networkcallback_get 3
 #define networkcallback_set 4
+#define clockcallback_get 5
+#define clockcallback_set 6
 #define statusbar 10
 
 
@@ -63,3 +65,4 @@ void b_system_misc(unsigned long function, void* var1, void* var2);
 
 // =============================================================================
 // EOF
+
