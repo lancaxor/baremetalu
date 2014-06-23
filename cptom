@@ -1,0 +1,16 @@
+if [ $# -lt 1 ]
+then
+echo "Too few parameters..."
+exit
+fi
+
+if [ ! -e ${1} ]
+then
+echo "File $1 NOT created!"
+exit
+fi
+
+cp $1 ../bin
+cd ../bin
+./bmfs bmfs.image create ${1} 1
+./bmfs bmfs.image write ${1}

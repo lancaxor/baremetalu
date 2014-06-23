@@ -1,0 +1,16 @@
+if [ $# -lt 1 ]
+then
+echo "Too few parameters..."
+exit
+fi
+./build $*
+if [ ! -e ${1} ]
+then
+exit
+fi
+./cptom $1
+./clean $*
+cd ../bin
+rm $1
+cd -
+echo "Done!"

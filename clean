@@ -1,0 +1,18 @@
+:
+if [ $# -lt 1 ]
+then
+echo "Too few parameters..."
+exit
+fi
+
+file=$1
+obj_output=""
+for file in $@
+do
+if [ -e ${file}.o ]
+then
+rm ${file}.o
+fi
+done
+rm $1
+echo "Cleaning done!"
